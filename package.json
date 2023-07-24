@@ -1,0 +1,23 @@
+{
+  "name": "webgl-school-report5",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-futenma/template-astro"
+  },
+  "dependencies": {
+    "astro": "^2.4.1",
+    "stylus": "^0.59.0"
+  },
+  "devDependencies": {
+    "lil-gui": "^0.18.2",
+    "vite-plugin-glsl": "^1.1.2"
+  }
+}

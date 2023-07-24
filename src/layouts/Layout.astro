@@ -1,0 +1,29 @@
+---
+import '../styles/globals.styl'
+import config from "../config/index.mjs"
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{config.meta.title[0]}</title>
+    <meta name="title" content={config.meta.title[0]} />
+    <meta name="description" content={config.meta.description[0]} />
+    <meta property="og:title" content={config.meta.title[1] ?? config.meta.title[0]} />
+    <meta property="og:description" content={config.meta.description[1] ?? config.meta.description[0]} />
+    <meta property="og:image" content={config.meta.ogUrl} />
+    <meta property="og:site_name" content={config.meta.siteName} />
+    <meta property="og:url" content={config.meta.ogUrl} />
+    <meta property="og:type" content={config.meta.ogType} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script src="../scripts/main.js"></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
