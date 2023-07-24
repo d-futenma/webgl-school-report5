@@ -7,7 +7,7 @@ const config = (() => {
 
   return {
     meta: {
-      title      : ['WebGL School Report 4.'],
+      title      : ['WebGL School Report 5.'],
       description: ['WebGL School Report'],
       siteName   : 'サイト名',
       ogUrl      : 'https://d-futenma.github.io/webgl-school-report5/',
